@@ -256,3 +256,39 @@ html,
         font-size: 1.6rem;
     }
 }
+/* ===============================
+   Homepage Hero
+================================= */
+
+.home-hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.hero-overlay {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-tagline {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 300;
+}

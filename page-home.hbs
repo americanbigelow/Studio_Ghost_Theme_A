@@ -1,10 +1,17 @@
 {{!< default}}
 
 {{#post}}
-<main class="home">
-    <h1>{{title}}</h1>
-    <div class="content">
-        {{content}}
+
+<section class="home-hero" {{#if feature_image}}style="background-image: url({{feature_image}});"{{/if}}>
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1 class="hero-title">{{title}}</h1>
+
+            {{#if custom_excerpt}}
+                <p class="hero-tagline">{{custom_excerpt}}</p>
+            {{/if}}
+        </div>
     </div>
-</main>
+</section>
+
 {{/post}}
