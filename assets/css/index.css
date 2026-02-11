@@ -259,6 +259,15 @@ html,
 /* ===============================
    Homepage Hero
 ================================= */
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.home-hero {
+    height: 100vh;
+    min-height: 100svh; /* better mobile handling */
+}
 
 .home-hero {
     height: 100vh;
