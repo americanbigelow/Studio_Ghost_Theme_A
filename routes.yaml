@@ -7,3 +7,7 @@ collections:
   /blog/:
     permalink: /blog/{slug}/
     template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
