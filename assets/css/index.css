@@ -376,3 +376,16 @@ html, body {
 .home-hero {
     position: relative;
 }
+
+/* ===============================
+   Larger Centered Logo (Homepage)
+================================= */
+
+.home-template .gh-head-logo img {
+    max-height: 90px;
+    height: auto;
+}
+
+.home-template .gh-portal-triggerbtn-container {
+    display: none;
+}
