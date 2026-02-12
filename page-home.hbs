@@ -5,6 +5,11 @@
 <section class="home-hero" {{#if feature_image}}style="background-image: url({{feature_image}});"{{/if}}>
     <div class="hero-overlay">
         <div class="hero-content">
+
+            {{#if @site.logo}}
+    <img src="{{@site.logo}}" alt="{{@site.title}}" class="hero-logo">
+{{/if}}
+
             <h1 class="hero-title">{{title}}</h1>
 
             {{#if custom_excerpt}}

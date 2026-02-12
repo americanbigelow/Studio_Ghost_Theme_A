@@ -259,15 +259,6 @@ html,
 /* ===============================
    Homepage Hero
 ================================= */
-html, body {
-    margin: 0;
-    height: 100%;
-}
-
-.home-hero {
-    height: 100vh;
-    min-height: 100svh; /* better mobile handling */
-}
 
 .home-hero {
     height: 100vh;
@@ -300,4 +291,19 @@ html, body {
 .hero-tagline {
     font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 300;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.home-hero {
+    height: 100vh;
+    min-height: 100svh; /* better mobile handling */
+}
+
+.hero-logo {
+    max-width: 160px;
+    margin-bottom: 2rem;
 }
