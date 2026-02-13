@@ -422,3 +422,13 @@ html, body {
 .home-template .gh-head-actions {
     display: none;
 }
+
+.hero-player {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 520px;
+}
+
+.hero-player iframe {
+    border-radius: 8px;
+}
