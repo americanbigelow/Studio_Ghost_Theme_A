@@ -389,3 +389,17 @@ html, body {
 .home-template .gh-portal-triggerbtn-container {
     display: none;
 }
+
+/* Hide header logo on large screens only */
+
+@media (min-width: 900px) {
+    .home-template .gh-head-logo {
+        display: none;
+    }
+
+}
+@media (min-width: 900px) {
+    .home-template .home-hero {
+        padding-top: 0;
+    }
+}
