@@ -403,3 +403,21 @@ html, body {
         padding-top: 0;
     }
 }
+
+.hero-logo {
+    max-width: 180px;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}
+
+.home-template .gh-portal-triggerbtn-container {
+    display: none !important;
+}
+
+.home-template .gh-head-actions {
+    display: none;
+}
+
+.home-template .gh-head-actions {
+    display: none;
+}
