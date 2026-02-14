@@ -432,3 +432,26 @@ html, body {
 .hero-player iframe {
     border-radius: 8px;
 }
+
+.playlist {
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.playlist li {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.playlist li:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.playlist li.active {
+    background: rgba(255,255,255,0.15);
+}

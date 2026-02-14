@@ -17,14 +17,30 @@ menuOpen();
 infiniteScroll();
 
 document.addEventListener('DOMContentLoaded', () => {
-const player = new Plyr('#audio-player', {
-  controls: [
-    'play',
-    'progress',
-    'current-time',
-    'mute',
-    'volume'
-  ]
-});
+  const player = new Plyr('#audio-player', {
+    controls: ['play', 'progress', 'current-time', 'mute', 'volume']
+  });
 
+  const playlistItems = document.querySelectorAll('.playlist li');
+
+  playlistItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const src = item.getAttribute('data-src');
+
+      player.source = {
+        type: 'audio',
+        sources: [
+          {
+            src: src,
+            type: 'audio/mp3'
+          }
+        ]
+      };
+
+      playlistItems.forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+      player.play();
+    });
+  });
 });
+ 
