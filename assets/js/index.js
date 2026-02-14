@@ -17,5 +17,14 @@ menuOpen();
 infiniteScroll();
 
 document.addEventListener('DOMContentLoaded', () => {
-  const player = new Plyr('#audio-player');
+const player = new Plyr('#audio-player', {
+  controls: [
+    'play',
+    'progress',
+    'current-time',
+    'mute',
+    'volume'
+  ]
+});
+
 });
