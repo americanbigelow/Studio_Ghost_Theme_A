@@ -429,9 +429,10 @@ html, body {
     max-width: 520px;
 }
 
-.hero-player iframe {
-    border-radius: 8px;
+.hero-player {
+    background: transparent; /* make sure wrapper isn't dimming */
 }
+
 
 .playlist {
     list-style: none;
@@ -439,6 +440,8 @@ html, body {
     margin-top: 3rem;
     max-height: 180px;
     overflow-y: auto;
+    background: rgba(0, 0, 0, 0.9); /* much less transparent */
+    border-radius: 16px;
 }
 
 .playlist li {
@@ -457,20 +460,24 @@ html, body {
 }
 
 /* Audio container */
-.plyr {
-    --plyr-color-main: #ffffff;
-    --plyr-audio-controls-background: rgba(0, 0, 0, 0.85);
-    --plyr-audio-control-color: #ffffff;
-    --plyr-control-radius: 999px;
-
-    border-radius: 30px;
-    backdrop-filter: none;
-}
 
 /* Remove extra transparency */
 .plyr__controls {
     background: transparent;
 }
+
+.plyr {
+    --plyr-color-main: #000000;
+    --plyr-audio-controls-background: #f2f2f2;
+    --plyr-audio-control-color: #000000;
+    --plyr-control-radius: 999px;
+
+    background: #f2f2f2;
+    border-radius: 999px;
+    backdrop-filter: none;
+    box-shadow: none;
+}
+
 
 .plyr__progress__buffer {
     background: rgba(255,255,255,0.2);
