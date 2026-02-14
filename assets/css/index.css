@@ -455,3 +455,27 @@ html, body {
 .playlist li.active {
     background: rgba(255,255,255,0.15);
 }
+
+/* Audio container */
+.plyr {
+    --plyr-color-main: #ffffff;
+    --plyr-audio-controls-background: rgba(0, 0, 0, 0.85);
+    --plyr-audio-control-color: #ffffff;
+    --plyr-control-radius: 999px;
+
+    border-radius: 30px;
+    backdrop-filter: none;
+}
+
+/* Remove extra transparency */
+.plyr__controls {
+    background: transparent;
+}
+
+.plyr__progress__buffer {
+    background: rgba(255,255,255,0.2);
+}
+
+.plyr__progress__played {
+    background: #ffffff;
+}
