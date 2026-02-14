@@ -424,7 +424,7 @@ html, body {
 }
 
 .hero-player {
-    margin-top: 5rem;
+    margin-top: 1rem;
     width: 100%;
     max-width: 520px;
 }
@@ -436,28 +436,31 @@ html, body {
 
 .playlist {
     list-style: none;
-    padding: 0;
-    margin-top: 3rem;
+    padding: 0.5rem 0;
+    margin-top: 0.75rem;
     max-height: 180px;
     overflow-y: auto;
-    background: rgba(0, 0, 0, 0.9); /* much less transparent */
-    border-radius: 16px;
+
+    background: #e6e6e6;       /* light grey */
+    border-radius: 20px;
 }
 
 .playlist li {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.25rem;
     cursor: pointer;
-    color: white;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #000;               /* black text */
+    transition: background 0.2s ease;
 }
 
 .playlist li:hover {
-    background: rgba(255,255,255,0.1);
+    background: #dcdcdc;       /* slightly darker on hover */
 }
 
 .playlist li.active {
-    background: rgba(255,255,255,0.15);
+    background: #f5f5f5;       /* lighter grey for current track */
+    font-weight: 600;
 }
+
 
 /* Audio container */
 
