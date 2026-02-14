@@ -424,7 +424,7 @@ html, body {
 }
 
 .hero-player {
-    margin-top: 1rem;
+    margin-top: 3rem;
     width: 100%;
     max-width: 520px;
 }
@@ -441,23 +441,23 @@ html, body {
     max-height: 180px;
     overflow-y: auto;
 
-    background: #e6e6e6;       /* light grey */
+    background: #B2B2B2;     /* darker grey base */
     border-radius: 20px;
 }
 
 .playlist li {
     padding: 0.75rem 1.25rem;
     cursor: pointer;
-    color: #000;               /* black text */
+    color: #000;
     transition: background 0.2s ease;
 }
 
 .playlist li:hover {
-    background: #dcdcdc;       /* slightly darker on hover */
+    background: #C6C6C6;     /* slightly lighter on hover */
 }
 
 .playlist li.active {
-    background: #f5f5f5;       /* lighter grey for current track */
+    background: #CCCCCC;     /* neon silver for current track */
     font-weight: 600;
 }
 
