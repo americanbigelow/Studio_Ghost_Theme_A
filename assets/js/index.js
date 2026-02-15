@@ -49,11 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const item = e.target.closest('li');
         if (!item) return;
 
-        const src = item.dataset.src;
-
         player.source = {
           type: 'audio',
-          sources: [{ src: src, type: 'audio/mp3' }]
+          sources: [{ src: item.dataset.src, type: 'audio/mp3' }]
         };
 
         document.querySelectorAll('.playlist li')
@@ -65,27 +63,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-  const playlistItems = document.querySelectorAll('.playlist li');
-
-  playlistItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const src = item.getAttribute('data-src');
-
-      player.source = {
-        type: 'audio',
-        sources: [
-          {
-            src: src,
-            type: 'audio/mp3'
-          }
-        ]
-      };
-
-      playlistItems.forEach(i => i.classList.remove('active'));
-      item.classList.add('active');
-      player.play();
-    });
-  });
-});
- 
